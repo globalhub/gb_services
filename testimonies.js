@@ -21,7 +21,16 @@ function alltestimonies() {
 
 $('#home').live('pageshow', function(event) {
 	
-	alltestimonies();
+	//alltestimonies();
+
+	$.ajax({
+    type: "GET",
+    url: "/ajax.asmx/GetNews",
+    data: "{Lang:'tr'}",
+    contentType: "application/json; charset=utf-8",
+    dataType: "json",
+    success: function (msg) { generateNews(msg); }
+})
 
 });
 

@@ -4,8 +4,9 @@
 	$server = "localhost";
 	$port = "";
 	$databasename = "lmt_staff";
-	$members = "members";
+	$members = "tmembers";
 	$reports = "reports";
+	$units = "units"
 	$testimonies = "testimonies";
 
 	$connection = mysqli_connect($server, $username, $password, $databasename);
